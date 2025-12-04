@@ -1,0 +1,58 @@
+# --- Project-specific ---
+logs/
+testing_dags/
+etl_examples/
+
+# Airflow local DB / runtime files
+airflow.db
+airflow.db-journal
+airflow-webserver.pid
+
+# If you generate local-only configs, ignore them.
+# (You can delete these lines if you WANT to version them.)
+airflow.cfg
+webserver_config.py
+
+# --- Python / packaging ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+*.log
+
+# --- Virtual environments ---
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# --- Tooling / test caches ---
+.pytest_cache/
+.mypy_cache/
+.tox/
+.coverage
+htmlcov/
+
+# --- IDE / editor / OS files ---
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Env files for docker-compose or local secrets ---
+.env
+.env.local
+.env.*.local
+
+
